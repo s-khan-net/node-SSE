@@ -1,0 +1,24 @@
+{
+  "name": "sse",
+  "version": "1.0.0",
+  "description": "sse with node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-khan-net/node-SSE.git"
+  },
+  "author": "saud khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s-khan-net/node-SSE/issues"
+  },
+  "homepage": "https://github.com/s-khan-net/node-SSE#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
