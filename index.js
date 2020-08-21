@@ -24,18 +24,18 @@ app.get('/',function(req,res,next){
         res.write('event: '+ String(event) +'\n'+'data: '+JSON.stringify(data)+'\n\n');
     });
 })
-let l = 51.673858;
-let a =7.815982;
+// let l = 51.673858;
+// let a =7.815982;
 
 setInterval(() => {
-    l = l + 0.100000;
-    a = a + 0.100000;
-    let r={
-        'lat':l,
-        'lng':a,
-        'timeStamp': new Date()
-    }
-    Stream.emit('push','message',{route:r});
+//     l = l + 0.100000;
+//     a = a + 0.100000;
+//     let r={
+//         'lat':l,
+//         'lng':a,
+//         'timeStamp': new Date()
+//     }
+    Stream.emit('push','message',{'dateTime':new Date()});
 }, 1000);
 
 app.listen(process.env.PORT || 5000)
